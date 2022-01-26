@@ -1,0 +1,21 @@
+
+import random
+Opening_line = ["once upon a time","long long ago","100 hours later","3 penut butter sandwhiches later"]
+Location = ["in a land far far way","in a wretched land","in a dystopian land","in a utopian land"]
+Character_A= ["a bird","2 peas in a pod","a king and a queen"]
+Action_A=["planted a seed,a tree for every seed grew fruit that would feed",
+          "stole a ring,that possessed the power to turn your enemies into",
+          "poisoned the people of the land all that was left were"]
+word = ["burn skint"," mutant cockroaches","GMO cucumbers"]
+
+print(random.choice(Opening_line))
+print(random.choice(Location))
+print(random.choice(Character_A))
+print(random.choice(Action_A))
+print(random.choice(word))
+
+# long long ago
+# in a dystopian land
+# a king and a queen
+# planted a seed,a tree for every seed grew fruit that would feed
+#  mutant cockroaches
