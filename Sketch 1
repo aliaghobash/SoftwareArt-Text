@@ -6,7 +6,7 @@ Character_A= ["a bird","2 peas in a pod","a king and a queen"]
 Action_A=["planted a seed,a tree for every seed grew fruit that would feed",
           "stole a ring,that possessed the power to turn your enemies into",
           "poisoned the people of the land all that was left were"]
-word = ["burn skint"," mutant cockroaches","GMO cucumbers"]
+word = ["aliens"," mutant cockroaches","GMO cucumbers"]
 
 print(random.choice(Opening_line))
 print(random.choice(Location))
