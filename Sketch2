@@ -1,0 +1,34 @@
+#Bolshevik slogan "Peace, Land and Bread",
+
+peace = 0
+land=0
+bread=0
+people = 1
+
+def destroy():
+    _del_()
+
+def Peace():
+    if peace != TRUE:
+        return
+    print('Peace!')
+    destroy(government)
+
+
+def Land():
+    if land/people != TRUE:
+        return
+    print("Land!")
+    destroy(government)
+
+
+def Bread():
+    if bread<=0:
+        return
+    print("Bread!")
+    destroy(government)
+
+
+Peace()
+Land()
+Bread()
