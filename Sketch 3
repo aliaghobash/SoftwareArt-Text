@@ -1,0 +1,139 @@
+
+import re
+
+#remove Alegria
+Lyrics1 = '''
+    Come un lampo di vita
+Come un pazzo gridar
+Come la rabbia di amar
+Come un assalto di gioia
+I see a spark of life shining
+I hear a young minstrel sing
+There is a love in me raging
+A joyous, magical feeling
+Beautiful roaring scream
+Of joy and sorrow so extreme
+There is a love in me raging
+A joyous, magical feeling
+Come un lampo di vita
+Come un pazzo gridar
+Del delittuoso grido
+Bella ruggente pena
+Seren
+Come un assalto di gioia
+There is a love in me raging
+Come la rabbia di amar
+There is a love in me raging
+Come la rabbia di amar
+There is a love in me raging
+Come la rabbia di amar
+There is a love in me raging
+Como la rabbia de amar
+La rabbia di amar
+La rabbia di amar
+Alegria
+Alegria
+Alegria
+Como la luz de la vida
+Alegria
+Como un payaso que grita
+Alegria
+Del estupendo grito
+De la tristeza loca
+Serena
+Como la rabia de amar
+Alegria
+Como un asalto de felicidad
+Del estupendo grito
+De la tristeza loca
+Serena
+Como la rabia de amar
+Alegria
+Como un asalto de felicidad
+There is a love in me raging
+Alegria
+A joyous, magical feeling
+
+'''
+
+
+
+#Remove italian lyrics
+
+
+
+#remove Mr.Self Destruct
+Lyrics2='''
+I am the voice inside your head (and I control you)
+I am the lover in your bed (and I control you) 
+I am the sex that you provide (and I control you) 
+I am the hate you try to hide (and I control you)
+I take you where you want to go 
+I give you all you need to know 
+I drag you down, I use you up 
+Mr. Self Destruct
+I speak religion's message clear (and I control you) 
+I am denial guilt and fear (and I control you) 
+I am the prayers of the naive (and I control you) 
+I am the lie that you believe (and I control you)
+I take you where you want to go 
+I give you all you need to know 
+I drag you down I use you up 
+Mr. Self Destruct
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+You let me do this to you (I am the exit)
+I am the needle in your vein
+I am the high you can't sustain
+I am the pusher, I'm a whore 
+I am the need you have for more
+I am the bullet in the gun (and I control you) 
+I am the truth from which you run (and I control you) 
+I am the silencing machine (and I control you) 
+I am the end of all your dreams (and I control you)
+I take you where you want to go 
+I give you all you need to know 
+I drag you down, I use you up 
+Mr. Self Destruct
+I take you where you want to go 
+I give you all you need to know 
+I drag you down, I use you up 
+Mr. Self Destruct
+'''
+
+
+
+import random
+#Lyrics1 = '''I love you
+#I want to spend my life with you
+#'''
+#Lyrics2= '''I hate your guts
+#I want to put your eyeballs in a frier
+#'''
+
+
+parse1 = Lyrics1.replace('\n',",")
+parse2 = Lyrics2.replace('\n',",")
+#print(parse1)
+#print(parse2)
+
+array1 = parse1.split(",")
+array2 = parse2.split(",")
+#print(array1)
+#print(array2)
+
+newSong= []
+
+#remove empty string elements from array
+for i in range(4):
+    current1 = random.choice(array1)
+    current2 = random.choice(array2)
+    newSong.append(current1)
+    newSong.append(current2)
+
+print(newSong)
