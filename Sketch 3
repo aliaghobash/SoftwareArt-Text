@@ -1,5 +1,5 @@
 
-import re
+import random
 
 #remove Alegria
 Lyrics1 = '''
@@ -58,7 +58,7 @@ A joyous, magical feeling
 
 
 
-#Remove italian lyrics
+
 
 
 
@@ -108,32 +108,39 @@ Mr. Self Destruct
 
 
 
-import random
-#Lyrics1 = '''I love you
-#I want to spend my life with you
-#'''
-#Lyrics2= '''I hate your guts
-#I want to put your eyeballs in a frier
-#'''
 
 
 parse1 = Lyrics1.replace('\n',",")
+parse1= parse1.replace("Alegria",'')
 parse2 = Lyrics2.replace('\n',",")
-#print(parse1)
-#print(parse2)
+parse2= parse2.replace("Mr. Self Destruct",'')
+
 
 array1 = parse1.split(",")
 array2 = parse2.split(",")
-#print(array1)
-#print(array2)
 
 newSong= []
 
 #remove empty string elements from array
-for i in range(4):
+for i in range(7):
     current1 = random.choice(array1)
     current2 = random.choice(array2)
     newSong.append(current1)
     newSong.append(current2)
 
 print(newSong)
+
+'''
+['Come la rabbia di amar',
+ 'I give you all you need to know ', 
+ ' magical feeling',
+  'I am the voice inside your head (and I control you)', 
+  'Como la rabia de amar', 
+  'I take you where you want to go ', 
+  '', 'I am the sex that you provide (and I control you) ', 
+  'A joyous',
+   'I give you all you need to know ',
+    'Como un payaso que grita',
+     'I give you all you need to know ',
+      'A joyous', '']
+'''
