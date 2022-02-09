@@ -1,0 +1,150 @@
+import random
+
+#teenage rebellion song remix
+Cigar = '''
+Come in here, dear boy, have a cigar
+You're gonna go far, you're gonna fly
+You're never gonna die
+You're gonna make it if you try
+They're gonna love you
+Well I've always had a deep respect
+And I mean that most sincere
+The band is just fantastic
+That is really what I think
+Oh by the way, which one's pink?
+And did we tell you the name of the game, boy
+We call it 'riding the gravy train'
+We're just knocked out
+We heard about the sell out
+You gotta get an album out
+You owe it to the people
+We're so happy we can hardly count
+Everybody else is just green
+Have you seen the chart?
+It's a helluva start
+It could be made into a monster
+If we all pull together as a team
+And did we tell you the name of the game, boy
+We call it 'riding the gravy train'
+'''
+
+Brick ='''
+We don't need no education
+We don't need no thought control
+No dark sarcasm in the classroom
+Teacher, leave them kids alone
+Hey, teacher, leave them kids alone
+All in all it's just another brick in the wall
+All in all you're just another brick in the wall
+We don't need no education
+We don't need no thought control
+No dark sarcasm in the classroom
+Teachers, leave them kids alone
+Hey, teachers, leave those kids alone
+All in all you're just another brick in the wall
+All in all you're just another brick in the wall
+Wrong, do it again
+If you don't eat yer meat, you can't have any pudding
+How can you have any pudding if you don't eat yer meat?
+You! Yes, you behind the bikesheds, stand still laddy!
+
+'''
+letmedown='''
+I'm taking a ride with my best friend
+I hope he never lets me down again
+He knows where he's taking me
+Taking me where I want to be
+I'm taking a ride with my best friend
+We're flying high
+We're watching the world pass us by
+Never want to come down
+Never want to put my feet back down on the ground
+I'm taking a ride with my best friend
+I hope he never lets me down again
+Promises me I'm safe as houses
+As long as I remember who's wearing the trousers
+I hope he never lets me down again
+We're flying high
+We're watching the world pass us by
+Never want to come down
+Never want to put my feet back down on the ground
+We're flying high
+We're watching the world pass us by
+Never want to come down
+Never want to put my feet back down on the ground
+Never let me down
+Never let me down
+Never let me down
+Never let me down
+See the stars, they're shining bright (never let me down)
+Everything's alright tonight (never let me down)
+See the stars, they're shining bright (never let me down)
+Everything's alright tonight (never let me down)
+See the stars, they're shining bright (never let me down)
+Everything's alright tonight (never let me down)
+See the stars, they're shining bright (never let me down)
+'''
+
+nouns = ["sex","drugs","rock n roll","hell","heaven","lust","love","hate","betrayal"]
+
+
+parse1 = Cigar.replace('\n',",")
+parse2 = Brick.replace('\n',",")
+parse2 = parse2.replace("teacher",random.choice(nouns))
+parse2 = parse2.replace("Teachers",random.choice(nouns))
+parse2 = parse2.replace("Teacher",random.choice(nouns))
+parse3 = letmedown.replace('\n',",")
+parse3 = parse3.replace("(never let me down)",random.choice(nouns))
+
+array1 = parse1.split(",")
+array2 = parse2.split(",")
+array3 = parse3.split(",")
+
+
+newSong= []
+
+#remove empty string elements from array
+for i in range(10):
+    current1 = random.choice(array1)
+    current2 = random.choice(array2)
+    current3 = random.choice(array3)
+    newSong.append(current1)
+    newSong.append(current2)
+    newSong.append(current3)
+
+joined= ",".join(newSong)
+newlines = joined.replace(",",'\n')
+print(newlines)
+
+#console output example
+'''
+We don't need no thought control
+Never let me down
+Oh by the way
+You! Yes
+See the stars
+We're just knocked out
+ leave them kids alone
+I hope he never lets me down again
+You're gonna make it if you try
+ heavens
+Never want to come down
+ which one's pink?
+ do it again
+I hope he never lets me down again
+ boy
+ 
+ Never want to come down
+And I mean that most sincere
+We don't need no education
+He knows where he's taking me
+It could be made into a monster
+Hey
+I'm taking a ride with my best friend
+They're gonna love you
+ heavens
+Never let me down
+The band is just fantastic
+All in all you're just another brick in the wall
+Everything's alright tonight sex
+'''
