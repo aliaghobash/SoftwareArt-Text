@@ -1,0 +1,62 @@
+ import random
+
+
+greatGatsby ='''
+"I shook hands with him; it seemed silly not to, for I felt
+suddenly as though I were talking to a child. Then he went
+into the jewelry store to buy a pearl necklace—or perhaps
+
+only a pair of cuff buttons—rid of my provincial squea-
+mishness forever.
+
+And as I sat there brooding on the old, unknown world,
+I thought of Gatsby’s wonder when he first picked out the
+green light at the end of Daisy’s dock. He had come a long
+way to this blue lawn and his dream must have seemed so
+close that he could hardly fail to grasp it. He did not know
+that it was already behind him, somewhere back in that vast
+
+obscurity beyond the city, where the dark fields of the re-
+public rolled on under the night.
+"
+'''
+character1= "BOB"
+character2= "FRANK"
+character3= "JOE"
+
+greatGatsby = greatGatsby.replace("him",character1)
+greatGatsby = greatGatsby.replace("Gatsby",character2)
+greatGatsby = greatGatsby.replace("Daisy",character3)
+print( character2 + ":"+ greatGatsby)
+
+
+
+text = ["I dont know","What happened?","I can't believe it","Life's unfair","Did you see that?","That mother fucker","Who knew?",
+        "If only I knew","God's plan","It's a crazy life","There's meaning behind all of this","Don't tell me","Are you sensing what I am sensing?",
+    "There are better ways to go about this", "life was different before", "back in the day I would have known how to handle this","it takes alot of time and experinece to know how to deal with this",
+        "I am sorry for your loss man","tough life","I need a cigar","tell me about it","tell me something I dont already know",
+        "can we put some music on?","Jesus, if only mom would hear about this","take your time","God's mystical ways","this baffles me",
+        "My wife is going to kill me","can you believe we were so stupid?","It's like winning the lottery and loosing your wife at the same time" , "Why god why?", "your turn", "Happy?"]
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+A = ["dark","late","worrisome","early"]
+B=["foggy","blurry","sunset","windy","raining"]
+C = ["runs","jogs","cries","wants to start a fight","feels the urge to smoke","plays a game of cards"]
+D =["brushes their teeth", "walks in a circle", "takes a deep breath", "smirks","plays the guitar"]
+
+print("It was " + random.choice(A) + " , " + random.choice(B) +". " + character1 + " "+ random.choice(C) + " ." + character2 +" "+
+      random.choice(D) + "." )
+
+
+for i in range(20):
+    print(character1 + ":" + random.choice(text) )
+    print(character2 + ":" + random.choice(text) )
+
+
+Ws = ["Who","What","When"]
+VERB = ["killed","tricked","deluded","cheated","worried","distrubed","troubled"]
+
+#prompt
+print (random.choice(Ws) +" " + random.choice(VERB) +" "+ character3 + "?")
